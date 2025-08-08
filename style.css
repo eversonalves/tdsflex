@@ -5,7 +5,7 @@ body{ /* corpo da pagina (tudo que está dentro do bory) */
     color: #ffffff; /* cor da fonte */
     min-height: 100vh; /* ultiliza 100% da pagina */
     display: flex; 
-    flex-direction: column; /* deixa os item do flex em coluna */
+    flex-direction: column; /* os items são colocados de cima para baixo */
     background-color: black; /* cor do fundo da pagina */
 }
 
@@ -19,17 +19,20 @@ body{ /* corpo da pagina (tudo que está dentro do bory) */
 header, footer{
     background-color: gray;
     padding: 20px; /* espacamento interno */
-    text-align: center; /* centraliza */
     display: flex;
     justify-content: space-around; 
 }
 
 header{
     justify-content: end;
+    text-align: center;
+    font-size: 100px;
 }
 
 footer{
     justify-content: left;
+    text-align: center;
+    font-size: 100px;
 }
 
 main{
@@ -37,10 +40,12 @@ main{
     padding: 20px;
     flex-grow: 1;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around; 
-    align-items: center;
+    flex-direction: column-reverse; /* os items são colocados de baixo para cima */
+    justify-content: space-around; /* os items são exibidos com espaçamento igual ao redor deles */
+    align-items: center; /* alinhas os item ao centro */
     height: 300px;
+    font-size: 100px; /* aumenta o tamanho da fonte */
+    text-align: center; /* centraliza o conteúdo */
 }
 
 .item{
